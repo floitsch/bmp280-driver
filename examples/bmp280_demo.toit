@@ -15,5 +15,7 @@ main:
 
   driver := bmp280.Bmp280 device
 
+  driver.on
+
   print "$driver.read_temperature C"
   print "$driver.read_pressure Pa"
