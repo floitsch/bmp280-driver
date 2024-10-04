@@ -11,11 +11,11 @@ main:
     --sda=gpio.Pin 21
     --scl=gpio.Pin 22
 
-  device := bus.device bmp280.I2C_ADDRESS
+  device := bus.device bmp280.I2C-ADDRESS
 
   driver := bmp280.Bmp280 device
 
   driver.on
 
-  print "$driver.read_temperature C"
-  print "$driver.read_pressure Pa"
+  print "$driver.read-temperature C"
+  print "$driver.read-pressure Pa"
