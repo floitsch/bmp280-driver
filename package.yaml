@@ -1,0 +1,2 @@
+name: bmp280
+description: Driver for the Bosch BMP280 temperature and pressure sensor.
